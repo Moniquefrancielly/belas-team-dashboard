@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BELAS Team Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <span class="badge">Protótipo Acadêmico</span>
+      <h1>BELAS Team Dashboard</h1>
+      <p>Centralize usuários, postagens e comentários em uma única interface.</p>
+      <button id="loadUsersBtn" class="primary-btn">Carregar usuários</button>
+    </div>
+  </header>
+
+  <main class="dashboard">
+    <section class="panel">
+      <div class="panel-header">
+        <h2>Usuários</h2>
+        <span class="panel-subtitle">Perfis disponíveis</span>
+      </div>
+      <div id="usersStatus" class="status"></div>
+      <div id="usersList" class="list"></div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-header">
+        <h2>Postagens</h2>
+        <span class="panel-subtitle">Conteúdos por usuário</span>
+      </div>
+      <div id="postsStatus" class="status"></div>
+      <div id="postsList" class="list"></div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-header">
+        <h2>Comentários</h2>
+        <span class="panel-subtitle">Interações por postagem</span>
+      </div>
+      <div id="commentsStatus" class="status"></div>
+      <div id="commentsList" class="list"></div>
+    </section>
+  </main>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
