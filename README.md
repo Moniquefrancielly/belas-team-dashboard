@@ -67,13 +67,14 @@ Este projeto utiliza a API pública:
 
 ---
 **Como Executar**
-(Será adicionado futuramente)
+1. Instale as dependências:
+pip install -r requirements.txt
 
----
-
-**Exemplo de Interface**
-(Será adicionado futuramente)
+2. Acesse no navegador:
+http://127.0.0.1:5000/users
+http://127.0.0.1:5000/posts
+http://127.0.0.1:5000/comments
 
 ---
 **👨‍💻 Equipe**
-(A ser preenchido pelos integrantes do grupo)
+Monique Francielly; Camilla Veloso; Eduardo Duarte; Pietra Grazielly; Camila Menezes.
